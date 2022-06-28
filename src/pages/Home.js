@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 
 //components
 import WorkoutDetails from '../components/WorkoutDetails'
+import ImageCard from '../components/ImageCard'
 
 const Home = () => {
     const [workouts, setWorkouts] = useState(null) // Create the state
@@ -26,6 +27,7 @@ const Home = () => {
                     <WorkoutDetails key={workout._id} workout={workout} />
                 ))}
             </div>
+        <ImageCard/>
         </div>
     )
 }
